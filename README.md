@@ -1,4 +1,4 @@
-[badge](https://img.shields.io/badge/version-0.0.9-yellow)
+![issue badge](https://img.shields.io/badge/version-0.0.9-yellow)
 
 # setup bot 
 
