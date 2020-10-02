@@ -16,7 +16,6 @@ class MainClient(commands.Cog):
         if menu == None:
 
             times = f"{datetime.datetime.today().year}-{datetime.datetime.today().month}-{datetime.datetime.today().day}"
-            times = "2020-11-03"
 
             ply = json.load(open('./data/ply.json', 'r'))
             try:
