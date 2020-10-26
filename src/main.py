@@ -2,16 +2,14 @@ import discord, time, json, datetime
 
 from discord.ext import commands 
 
-locale = json.load(open('./data/setup.json', 'r'))["locale"]
-
 class MainClient(commands.Cog):
 
     def __init__(self, client):
         self.client = client
         self.locale = json.load(open(f'./locale/{locale}.json', 'r', encoding="UTF-8"))
 
-    @commands.command(aliases=["check", "attendancecheck"])
-    async def 출첵(self, ctx, menu=None):
+    @commands.command(aliases=["출첵", "attendancecheck"])
+    async def check(self, ctx, menu=None):
 
         if menu == None:
 
